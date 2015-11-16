@@ -1,0 +1,15 @@
+When user input is 0
+
+Line 21(27) will cause the exception
+
+When user input is 2
+
+Line 17 (23) will cause the exception
+
+When user input is 4
+
+Line 19 (25) will cause the exception
+
+When user input is 6
+
+Line 11 (17) will cause the exception to be thrown
