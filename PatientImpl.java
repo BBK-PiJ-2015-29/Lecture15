@@ -19,15 +19,26 @@ public class PatientImpl implements Patient {
 	public PatientImpl(String name, GregorianCalendar dob) {
 		this.name = name;
 		this.dob = dob;
+
 		if ((this.getAge() < 0) || (this.getAge() > 130)) {
+
 			throw new IllegalArgumentException();
+
 		}
 	}
 	
 	public int getAge() {
 		GregorianCalendar current = new GregorianCalendar();
 		long ageMillis = current.getTimeInMillis() - dob.getTimeInMillis();
+		if(ageMillis < 0) {
+			return -1;
+		} 
 		int age = (int)(ageMillis / MILLIS_IN_YEAR);
+	
 		return age;
+	}
+
+	public String getName() {
+		return this.name;
 	}
 }

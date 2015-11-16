@@ -10,4 +10,11 @@ public interface Patient {
 	 * @return age as an int in years.
 	 */
 	int getAge();
+
+	/**
+	 * Returns the patient's name
+	 * 
+	 * @return the patient's name as a String
+	 */
+	String getName();
 }
