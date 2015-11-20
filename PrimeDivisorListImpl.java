@@ -118,6 +118,7 @@ public class PrimeDivisorListImpl implements PrimeDivisorList{
 			} else {
 				output += temp + " + ";
 			}
+			count = 1;
 
 		}
 
